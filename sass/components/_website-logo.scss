@@ -5,8 +5,12 @@
   line-height: 1.192;
   letter-spacing: $lettSpacing-03;
   color: $colorDark;
+
+  .header-section & {
+    margin-right: 93px;
+  }
 }
 
-.accent {
+.website-logo--accent {
   color: $colorAccent;
 }

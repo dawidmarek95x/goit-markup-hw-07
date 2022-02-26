@@ -26,10 +26,14 @@ img {
   display: block;
 }
 
-.styles-for-lists {
+.link-dec {
+  text-decoration: none;
+}
+
+.list--non-bulleted {
   list-style: none;
 }
 
-.link-dec {
+.link--non-decorated {
   text-decoration: none;
 }

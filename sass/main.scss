@@ -1,33 +1,34 @@
 @import './utils/variables';
 
-@import './components/common';
-@import './components/container';
-@import './components/section';
+@import './base/common';
+@import './base/container';
+@import './base/section';
 @import './components/backdrop';
 @import './components/modal';
 // Tu wstawić komponenty wybrane z modal //
 @import './components/website-logo';
+@import './components/navigation';
 @import './components/secondary-header';
 @import './components/tertiary-header';
 @import './components/social-links';
 
 
 // STUDIO HOMEPAGE //
-@import './components/header';
-// Tu wstawić komponenty wybrane z header //
-@import './components/footer';
+@import './layout/header-section';
+@import './layout/header-contact';
+@import './layout/footer';
 // Tu wstawić komponenty wybrane z footer //
-@import './components/hero';
+@import './layout/hero';
 // Tu wstawić komponenty wybrane z hero //
-@import './components/about';
+@import './layout/about';
 // Tu wstawić komponenty wybrane z about //
-@import './components/what-we-do';
+@import './layout/what-we-do';
 // Tu wstawić komponenty wybrane z what we do //
-@import './components/team';
+@import './layout/team';
 // Tu wstawić komponenty wybrane z team //
-@import './components/customers';
+@import './layout/customers';
 // Tu wstawić komponenty wybrane z customers //
 
 // PORTFOLIO PAGE //
-@import './components/portfolio';
+@import './layout/portfolio';
 // Tu wstawić komponenty wybrane z portfolio //
