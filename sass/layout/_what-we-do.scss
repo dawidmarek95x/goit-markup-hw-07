@@ -1,13 +1,13 @@
-.what-we-do--list {
+.what-we-do__list {
   display: flex;
   justify-content: space-between;
 }
 
-.what-we-do--list-item {
+.what-we-do__item {
   position: relative;
 }
 
-.what-we-do--list-label {
+.what-we-do__label {
   position: absolute;
   left: 0;
   bottom: 0;
