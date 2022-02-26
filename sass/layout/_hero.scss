@@ -10,27 +10,19 @@
   background-size: cover;
 }
 
-.hero-content {
+.hero__content {
   width: 696px;
   margin: 0 auto;
   text-align: center;
 }
 
-.hero-content h1,
-.hero-content button {
+.hero__content h1,
+.hero__content button {
   letter-spacing: $lettSpacing-06;
   color: $colorLight;
 }
 
-.main-header {
-  margin-bottom: 30px;
-  font-weight: $fontWeightBlack;
-  font-size: $fontSize44;
-  line-height: 1.364;
-  text-transform: uppercase;
-}
-
-.hero-btn {
+.hero__btn {
   padding: 10px 41px 10px 42px;
   border: 0px;
   border-radius: 4px;
