@@ -1,0 +1,33 @@
+@import './utils/variables';
+
+@import './components/common';
+@import './components/container';
+@import './components/section';
+@import './components/backdrop';
+@import './components/modal';
+// Tu wstawić komponenty wybrane z modal //
+@import './components/website-logo';
+@import './components/secondary-header';
+@import './components/tertiary-header';
+@import './components/social-links';
+
+
+// STUDIO HOMEPAGE //
+@import './components/header';
+// Tu wstawić komponenty wybrane z header //
+@import './components/footer';
+// Tu wstawić komponenty wybrane z footer //
+@import './components/hero';
+// Tu wstawić komponenty wybrane z hero //
+@import './components/about';
+// Tu wstawić komponenty wybrane z about //
+@import './components/what-we-do';
+// Tu wstawić komponenty wybrane z what we do //
+@import './components/team';
+// Tu wstawić komponenty wybrane z team //
+@import './components/customers';
+// Tu wstawić komponenty wybrane z customers //
+
+// PORTFOLIO PAGE //
+@import './components/portfolio';
+// Tu wstawić komponenty wybrane z portfolio //
