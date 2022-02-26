@@ -1,3 +1,5 @@
+/* UTILITY COMPONENTS */
+/* BASE COMPONENTS */
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -26,10 +28,6 @@ img {
   display: block;
 }
 
-.link-dec {
-  text-decoration: none;
-}
-
 .list--non-bulleted {
   list-style: none;
 }
@@ -49,6 +47,7 @@ img {
   padding-bottom: 94px;
 }
 
+/* MODAL WINDOW COMPONENTS */
 .backdrop {
   position: fixed;
   top: 0;
@@ -81,6 +80,15 @@ img {
   transform: translate(-50%, -50%);
 }
 
+.modal__header {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
 .close-btn {
   position: absolute;
   top: 8px;
@@ -102,15 +110,6 @@ img {
   fill: #000;
 }
 
-.modal__form-header {
-  margin-bottom: 12px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
 .application-form {
   display: flex;
   flex-direction: column;
@@ -127,7 +126,7 @@ img {
   color: #757575;
 }
 
-.application-form__input-wrapper {
+.application-form__input--wrapper {
   position: relative;
   display: block;
   margin-top: 4px;
@@ -142,6 +141,14 @@ img {
   outline: none;
   font-size: 12px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.application-form__input:focus {
+  border-color: #2196f3;
+}
+
+.application-form__input:focus + .application-form__icon {
+  fill: #2196f3;
 }
 
 .application-form__icon {
@@ -168,17 +175,12 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__form-message::placeholder {
+.application-form__message::placeholder {
   color: #75757580;
 }
 
-.application-form__input:focus,
 .application-form__message:focus {
   border-color: #2196f3;
-}
-
-.application-form__input:focus + .application-form__icon {
-  fill: #2196f3;
 }
 
 .application-form__policy {
@@ -198,6 +200,10 @@ img {
   appearance: none;
 }
 
+.application-form__policy-input:checked + .check-icon {
+  visibility: visible;
+}
+
 .check-icon {
   position: absolute;
   top: -2px;
@@ -209,10 +215,6 @@ img {
   fill: #fff;
   cursor: pointer;
   visibility: hidden;
-}
-
-.application-form__policy-input:checked + .check-icon {
-  visibility: visible;
 }
 
 .application-form__policy-text {
@@ -243,6 +245,7 @@ img {
   cursor: pointer;
 }
 
+/* MULTIPLE COMPONENTS */
 .website-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -330,6 +333,7 @@ img {
   fill: #ffffff;
 }
 
+/* HEADER COMPONENTS */
 .header-section {
   border-bottom: 1px solid #ececec;
 }
@@ -419,6 +423,7 @@ img {
   height: 16px;
 }
 
+/* FOOTER COMPONENTS */
 .footer-section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -536,6 +541,7 @@ img {
   margin-left: 24px;
 }
 
+/* MAIN COMPONENTS STUDIO WEBSITE */
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -712,6 +718,7 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* MAIN COMPONENTS PORTFOLIO WEBSITE */
 .filter-set {
   display: flex;
   justify-content: center;
