@@ -3,41 +3,42 @@
   --fontSecondary: 'Raleway', sans-serif;
   --colorPrimary: #212121;
   --colorSecondary: #757575;
-  --colorBlack: #000000;
-  --colorWhite: #ffffff;
-  --colorWhite-opacity60: #ffffff99;
+  --colorDark: #000000;
+  --colorLight: #ffffff;
+  --colorLightOpacity: #ffffff99;
   --colorAccent: #2196f3;
   --colorAccentOpacity: #2196f3e5;
-  --colorBackground-dark: #2f303a;
-  --colorBackground-light: #f5f4fa;
-  --colorBorder-header: #ececec;
-  --colorBorder-projects: #eeeeee;
-  --colorPrimary-icons: #afb1b8;
-  --colorSecondaryBackground-icons: #ffffff1a;
-  --colorBackdropBorder: #21212133;
+  --colorPrimaryIcons: #afb1b8;
   --colorBackdropPlaceholder: #75757580;
-  --fontStyle-main: normal;
-  --fontStyle-italic: italic;
-  --fontWeight-medium: 500;
-  --fontWeight-bold: 700;
-  --fontWeight-black: 900;
-  --fontSize-14: 14px;
-  --fontSize-16: 16px;
-  --fontSize-18: 18px;
-  --fontSize-20: 20px;
-  --fontSize-26: 26px;
-  --fontSize-36: 36px;
-  --fontSize-44: 44px;
+  --bgColorDark: #2f303a;
+  --bgColorLight: #f5f4fa;
+  --bgColorSecondaryIcons: #ffffff1a;
+  --borderColorHeader: #ececec;
+  --borderColorProjects: #eeeeee;
+  --borderColorBackdrop: #21212133;
+  --fontStylePrimary: normal;
+  --fontWeightMedium: 500;
+  --fontWeightBold: 700;
+  --fontWeightBlack: 900;
+  --fontSize14: 14px;
+  --fontSize16: 16px;
+  --fontSize18: 18px;
+  --fontSize20: 20px;
+  --fontSize26: 26px;
+  --fontSize36: 36px;
+  --fontSize44: 44px;
+  --fontSizeFormHeader: 20px;
   --fontSizeFormLabel: 12px;
+  --fontSizeFormInput: 12px;
   --lettSpacing-02: 0.02em;
   --lettSpacing-03: 0.03em;
   --lettSpacing-06: 0.06em;
-  --lettSpacingFormLabel: 0.01em;
+  --lettSpacingFormField: 0.01em;
 }
 
 body {
   font-family: var(--fontMain);
-  font-size: var(--fontSize-14);
+  font-size: var(--fontSize14);
   color: var(--colorPrimary);
 }
 
@@ -85,11 +86,11 @@ img {
 
 .website-logo {
   font-family: var(--fontSecondary);
-  font-weight: var(--fontWeight-bold);
-  font-size: var(--fontSize-26);
+  font-weight: var(--fontWeightBold);
+  font-size: var(--fontSize26);
   line-height: 1.192;
   letter-spacing: var(--lettSpacing-03);
-  color: var(--colorBlack);
+  color: var(--colorDark);
 }
 
 .accent {
@@ -98,16 +99,16 @@ img {
 
 .secondary-header {
   margin-bottom: 50px;
-  font-weight: var(--fontWeight-bold);
-  font-size: var(--fontSize-36);
+  font-weight: var(--fontWeightBold);
+  font-size: var(--fontSize36);
   line-height: 1.167;
   text-align: center;
   letter-spacing: var(--lettSpacing-03);
 }
 
 .tertiary-header {
-  font-weight: var(--fontWeight-bold);
-  font-size: var(--fontSize-14);
+  font-weight: var(--fontWeightBold);
+  font-size: var(--fontSize14);
   line-height: 1.143;
   letter-spacing: var(--lettSpacing-03);
   text-transform: uppercase;
@@ -131,11 +132,11 @@ img {
 }
 
 .social-link-link-light {
-  background-color: var(--colorWhite);
+  background-color: var(--colorLight);
 }
 
 .social-link-link-dark {
-  background-color: var(--colorSecondaryBackground-icons);
+  background-color: var(--bgColorSecondaryIcons);
 }
 
 .social-link-link:hover,
@@ -149,24 +150,24 @@ img {
 }
 
 .social-link-icon-light {
-  fill: var(--colorPrimary-icons);
+  fill: var(--colorPrimaryIcons);
 }
 
 .social-link-icon-dark {
-  fill: var(--colorWhite);
+  fill: var(--colorLight);
 }
 
 .social-link-link:hover > .social-link-icon-light,
 .social-link-link:focus > .social-link-icon-light,
 .social-link-link:hover > .social-link-icon-dark,
 .social-link-link:focus > .social-link-icon-dark {
-  fill: var(--colorWhite);
+  fill: var(--colorLight);
 }
 /* ===== END COMPONENTS ===== */
 
 /* ===== HEADER ===== */
 .header-section {
-  border-bottom: 1px solid var(--colorBorder-header);
+  border-bottom: 1px solid var(--borderColorHeader);
 }
 
 .nav-container {
@@ -203,7 +204,7 @@ img {
 }
 
 .header-list-links {
-  font-weight: var(--fontWeight-medium);
+  font-weight: var(--fontWeightMedium);
   line-height: 1.143;
   letter-spacing: var(--lettSpacing-02);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -264,7 +265,7 @@ img {
 .footer-section {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: var(--colorBackground-dark);
+  background-color: var(--bgColorDark);
 }
 
 .footer-main-container {
@@ -284,14 +285,14 @@ img {
 }
 
 .website-logo-dark-theme {
-  color: var(--colorWhite);
+  color: var(--colorLight);
 }
 
 .address-list-link {
-  font-style: var(--fontStyle-main);
+  font-style: var(--fontStylePrimary);
   line-height: 1.714;
   letter-spacing: var(--lettSpacing-03);
-  color: var(--colorWhite);
+  color: var(--colorLight);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -301,12 +302,12 @@ img {
 }
 
 .address-contact-link {
-  color: var(--colorWhite-opacity60);
+  color: var(--colorLightOpacity);
 }
 
 .footer-headers {
   margin-bottom: 20px;
-  color: var(--colorWhite);
+  color: var(--colorLight);
 }
 
 .footer-social-container {
@@ -326,12 +327,12 @@ img {
 
 .newsletter__label {
   margin-bottom: 20px;
-  font-weight: var(--fontWeight-bold);
-  font-size: var(--fontSize-14);
+  font-weight: var(--fontWeightBold);
+  font-size: var(--fontSize14);
   line-height: 1.143;
   letter-spacing: var(--lettSpacing-03);
   text-transform: uppercase;
-  color: var(--colorWhite);
+  color: var(--colorLight);
 }
 
 .newsletter__wrapper {
@@ -344,17 +345,17 @@ img {
   margin-right: 12px;
   border: 1px solid #ffffff4d;
   border-radius: 4px;
-  font-size: var(--fontSize-16);
+  font-size: var(--fontSize16);
   line-height: 1.25;
   letter-spacing: var(--lettSpacing-03);
-  color: var(--colorWhite);
-  background-color: var(--colorBackground-dark);
+  color: var(--colorLight);
+  background-color: var(--bgColorDark);
   outline: none;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 .newsletter__input::placeholder {
-  color: var(--colorWhite-opacity60)
+  color: var(--colorLightOpacity)
 }
 
 .newsletter-btn {
@@ -366,11 +367,11 @@ img {
   border: none;
   border-radius: 4px;
   text-align: center;
-  font-weight: var(--fontWeight-bold);
-  font-size: var(--fontSize-16);
+  font-weight: var(--fontWeightBold);
+  font-size: var(--fontSize16);
   line-height: 1.875;
   letter-spacing: var(--lettSpacing-06);
-  color: var(--colorWhite);
+  color: var(--colorLight);
   background-color: var(--colorAccent);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.149);
   cursor: pointer;
@@ -389,7 +390,7 @@ img {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: var(--colorBackground-dark);
+  background-color: var(--bgColorDark);
   background-image: linear-gradient(
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)),
@@ -407,13 +408,13 @@ img {
 .hero-content h1,
 .hero-content button {
   letter-spacing: var(--lettSpacing-06);
-  color: var(--colorWhite);
+  color: var(--colorLight);
 }
 
 .main-header {
   margin-bottom: 30px;
-  font-weight: var(--fontWeight-black);
-  font-size: var(--fontSize-44);
+  font-weight: var(--fontWeightBlack);
+  font-size: var(--fontSize44);
   line-height: 1.364;
   text-transform: uppercase;
 }
@@ -422,8 +423,8 @@ img {
   padding: 10px 41px 10px 42px;
   border: 0px;
   border-radius: 4px;
-  font-weight: var(--fontWeight-bold);
-  font-size: var(--fontSize-16);
+  font-weight: var(--fontWeightBold);
+  font-size: var(--fontSize16);
   line-height: 1.875;
   background-color: var(--colorAccent);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -451,7 +452,7 @@ img {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
-  background-color: var(--colorBackground-light);
+  background-color: var(--bgColorLight);
   border-radius: 4px;
 }
 
@@ -488,20 +489,20 @@ img {
   width: 100%;
   padding-top: 27px;
   padding-bottom: 27px;
-  font-weight: var(--fontWeight-bold);
-  font-size: var(--fontSize-14);
+  font-weight: var(--fontWeightBold);
+  font-size: var(--fontSize14);
   line-height: 1.143;
   text-align: center;
   letter-spacing: var(--lettSpacing-03);
   text-transform: uppercase;
-  color: var(--colorWhite);
+  color: var(--colorLight);
   background-color: rgba(47, 48, 58, 0.8);
 }
 /* ----- END WHAT WE DO ----- */
 
 /* ----- TEAM SECTION ----- */
 .team {
-  background-color: var(--colorBackground-light);
+  background-color: var(--bgColorLight);
 }
 
 .team-list {
@@ -517,7 +518,7 @@ img {
 
 .team-list-item h3,
 .team-list-item p {
-  font-size: var(--fontSize-16);
+  font-size: var(--fontSize16);
   line-height: 1.188;
   text-align: center;
   letter-spacing: var(--lettSpacing-03);
@@ -526,7 +527,7 @@ img {
 .team-list-name {
   margin-top: 30px;
   margin-bottom: 10px;
-  font-weight: var(--fontWeight-medium);
+  font-weight: var(--fontWeightMedium);
 }
 
 .team-list-workplace {
@@ -552,7 +553,7 @@ img {
   align-items: center;
   width: 170px;
   height: 92px;
-  border: 1px solid var(--colorPrimary-icons);
+  border: 1px solid var(--colorPrimaryIcons);
   border-radius: 4px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -565,7 +566,7 @@ img {
 .customers-icon {
   width: 106px;
   height: 60px;
-  fill: var(--colorPrimary-icons);
+  fill: var(--colorPrimaryIcons);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -593,19 +594,19 @@ img {
   margin-bottom: 56px;
   border: 0;
   border-radius: 4px;
-  font-weight: var(--fontWeight-medium);
-  font-size: var(--fontSize-16);
+  font-weight: var(--fontWeightMedium);
+  font-size: var(--fontSize16);
   line-height: 1.625;
   text-align: center;
   letter-spacing: var(--lettSpacing-03);
-  background-color: var(--colorBackground-light);
+  background-color: var(--bgColorLight);
   cursor: pointer;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-filter-set-btn:hover,
 .portfolio-filter-set-btn:focus {
-  color: var(--colorWhite);
+  color: var(--colorLight);
   background-color: var(--colorAccent);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -618,7 +619,7 @@ img {
 
 .portfolio-project-item {
   max-width: 370px;
-  border: 1px solid var(--colorBorder-projects);
+  border: 1px solid var(--borderColorProjects);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -650,10 +651,10 @@ img {
   width: 100%;
   height: 100%;
   padding: 49px 45px 49px 24px;
-  font-size: var(--fontSize-18);
+  font-size: var(--fontSize18);
   line-height: 1.556;
   letter-spacing: 0.03em;
-  color: var(--colorWhite);
+  color: var(--colorLight);
   background-color: var(--colorAccentOpacity);
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -665,15 +666,15 @@ img {
 
 .portfolio-project-name {
   margin: 20px 24px 4px 24px;
-  font-weight: var(--fontWeight-bold);
-  font-size: var(--fontSize-18);
+  font-weight: var(--fontWeightBold);
+  font-size: var(--fontSize18);
   line-height: 2;
   letter-spacing: var(--lettSpacing-06);
 }
 
 .portfolio-project-type {
   margin: 0 24px 20px 24px;
-  font-size: var(--fontSize-16);
+  font-size: var(--fontSize16);
   line-height: 1.875;
   letter-spacing: var(--lettSpacing-03);
   color: var(--colorSecondary);
@@ -736,8 +737,8 @@ img {
 
 .modal__form-header {
   margin-bottom: 12px;
-  font-weight: var(--fontWeight-bold);
-  font-size: var(--fontSize-20);
+  font-weight: var(--fontWeightBold);
+  font-size: var(--fontSizeFormHeader);
   line-height: 1.15;
   text-align: center;
   letter-spacing: var(--lettSpacing-03);
@@ -750,12 +751,12 @@ img {
 
 .application-form__field {
   margin-bottom: 10px;
-  font-size: var(--fontSizeFormLabel);
   line-height: 1.167;
-  letter-spacing: var(--lettSpacingFormLabel);
+  letter-spacing: var(--lettSpacingFormField);
 }
 
 .application-form__label {
+  font-size: var(--fontSizeFormLabel);
   color: var(--colorSecondary);
 }
 
@@ -768,10 +769,11 @@ img {
 .application-form__input {
   width: 100%;
   height: 40px;
-  border: 1px solid var(--colorBackdropBorder);
+  border: 1px solid var(--borderColorBackdrop);
   border-radius: 4px;
   padding-left: 42px;
   outline: none;
+  font-size: var(--fontSizeFormInput);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -790,11 +792,10 @@ img {
   height: 120px;
   padding: 12px 16px;
   margin-top: 4px;
-  border: 1px solid var(--colorBackdropBorder);
+  border: 1px solid var(--borderColorBackdrop);
   border-radius: 4px;
-  font-size: var(--fontSizeFormLabel);
+  font-size: var(--fontSizeFormInput);
   line-height: 1.167;
-  letter-spacing: var(--lettSpacingFormLabel);
   resize: none;
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -864,12 +865,12 @@ img {
   margin: 0 auto;
   border: none;
   border-radius: 4px;
-  font-weight: var(--fontWeight-bold);
-  font-size: var(--fontSize-16);
+  font-weight: var(--fontWeightBold);
+  font-size: var(--fontSize16);
   line-height: 1.875;
   letter-spacing: var(--lettSpacing-06);
   text-align: center;
-  color: var(--colorWhite);
+  color: var(--colorLight);
   background-color: var(--colorAccent);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
