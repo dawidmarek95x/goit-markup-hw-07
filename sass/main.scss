@@ -3,21 +3,21 @@
 @import './base/common';
 @import './base/container';
 @import './base/section';
+
 @import './components/backdrop';
 @import './components/modal';
 // Tu wstawić komponenty wybrane z modal //
 @import './components/website-logo';
-@import './components/navigation';
 @import './components/secondary-header';
 @import './components/tertiary-header';
 @import './components/social-links';
 
-
-// STUDIO HOMEPAGE //
 @import './layout/header-section';
+@import './components/navigation';
 @import './layout/header-contact';
-@import './layout/footer';
-// Tu wstawić komponenty wybrane z footer //
+
+@import './layout/footer-section';
+@import './components/newsletter';
 @import './layout/hero';
 // Tu wstawić komponenty wybrane z hero //
 @import './layout/about';
@@ -30,5 +30,5 @@
 // Tu wstawić komponenty wybrane z customers //
 
 // PORTFOLIO PAGE //
-@import './layout/portfolio';
-// Tu wstawić komponenty wybrane z portfolio //
+@import './components/filter-set';
+@import './components/projects';
