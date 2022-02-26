@@ -14,12 +14,12 @@
   width: 696px;
   margin: 0 auto;
   text-align: center;
-}
 
-.hero__content h1,
-.hero__content button {
-  letter-spacing: $lettSpacing-06;
-  color: $colorLight;
+  & h1,
+  & button {
+    letter-spacing: $lettSpacing-06;
+    color: $colorLight;
+  }
 }
 
 .hero__btn {
